@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="毎日の歯みがきを、家族みんなが続けやすい価格と使い心地で。アトミ歯ブラシ・アトミ歯ミガキの紹介ページです。">
+  <title>家族の毎日に、続けやすいオーラルケア｜アトミ</title>
+  <style>
+    :root{--pink:#f7b9c7;--pink2:#fff0f4;--blue:#22aedd;--navy:#314457;--gold:#e5ad37;--white:#fff;--shadow:0 18px 50px rgba(139,76,94,.14)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--navy);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;background:#fffafc;line-height:1.8}
+    a{color:inherit}.wrap{width:min(1080px,calc(100% - 36px));margin:auto}.eyebrow{font-size:.78rem;letter-spacing:.2em;font-weight:800;color:#d8708a}.section{padding:76px 0}.title{margin:.3em 0;font-size:clamp(1.8rem,5vw,3rem);line-height:1.35}.lead{font-size:clamp(1rem,2.6vw,1.18rem)}
+    .hero{min-height:92vh;display:grid;place-items:center;overflow:hidden;position:relative;background:linear-gradient(145deg,#ffeef3 0%,#f7b6c5 52%,#efa5b7 100%)}
+    .hero:before,.hero:after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.42)}.hero:before{width:360px;height:360px;right:-120px;top:-90px}.hero:after{width:220px;height:220px;left:-80px;bottom:5%}
+    .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:70px 0}.hero h1{font-size:clamp(2.4rem,6vw,5rem);line-height:1.13;margin:.18em 0;color:#fff;text-shadow:0 3px 20px rgba(155,70,93,.18)}.hero h1 span{display:block;color:var(--blue)}.hero-copy{max-width:590px}.hero .lead{color:#694e58;font-weight:600}.chips{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0}.chip{background:#fff;border-radius:999px;padding:7px 14px;font-size:.82rem;font-weight:700;box-shadow:0 7px 22px rgba(115,63,77,.1)}.button{display:inline-block;border:0;border-radius:999px;background:var(--blue);color:#fff;text-decoration:none;font-weight:800;padding:15px 27px;box-shadow:0 10px 25px rgba(34,174,221,.28)}
+    .stage{height:430px;position:relative}.plinth{position:absolute;background:#f8dce4;box-shadow:var(--shadow)}.p1{width:190px;height:340px;right:40px;top:25px;border-radius:90px 90px 18px 18px}.p2{width:210px;height:110px;left:5px;bottom:14px;border-radius:55px}.brush{position:absolute;width:27px;height:330px;border-radius:18px;background:linear-gradient(90deg,rgba(255,255,255,.55),#58c1e7 45%,#177fab);box-shadow:0 13px 28px rgba(80,81,126,.22);transform:rotate(8deg);left:150px;top:40px}.brush:before{content:"";position:absolute;width:46px;height:66px;border-radius:45%;left:-10px;top:-22px;background:repeating-linear-gradient(90deg,#e8ad32 0 3px,#ffdd75 3px 6px)}.brush.pink{left:auto;right:100px;top:70px;transform:rotate(17deg);background:linear-gradient(90deg,#ffe6ee,#ee71a1 55%,#b8396e)}
+    .problems{background:#fff}.problem-grid,.feature-grid,.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border-radius:24px;padding:28px;box-shadow:var(--shadow)}.problem{border-top:5px solid var(--pink)}.icon{font-size:2rem}.answer{margin-top:36px;padding:28px;border-radius:24px;text-align:center;background:linear-gradient(90deg,#e7f8ff,#fff0f4);font-weight:800;font-size:1.15rem}
+    .toothbrush{background:linear-gradient(#fff7fa,#eefaff)}.feature{border:1px solid #f5d8e0}.feature b{display:block;color:#d45f7c;font-size:1.08rem;margin:.5em 0}.note{font-size:.78rem;color:#6f7780}
+    .prices{overflow:auto}.price-table{width:100%;border-collapse:separate;border-spacing:0 9px;min-width:590px}.price-table th{font-size:.8rem}.price-table td{background:#fff;padding:15px;text-align:center}.price-table td:first-child{border-radius:14px 0 0 14px;text-align:left;font-weight:800}.price-table td:last-child{border-radius:0 14px 14px 0}.price{color:#dc5877;font-size:1.2rem;font-weight:900}
+    .paste{background:#fff}.paste-box{display:grid;grid-template-columns:.75fr 1.25fr;gap:45px;align-items:center}.bottles{height:360px;display:flex;align-items:flex-end;justify-content:center;gap:24px;background:linear-gradient(145deg,#f7fbf9,#fff);border-radius:40px}.tube{width:100px;height:270px;border-radius:24px 24px 12px 12px;background:linear-gradient(#f4ffff 20%,#ffd84c);border:2px solid #f3f4e8;box-shadow:var(--shadow);position:relative}.tube.small{width:68px;height:190px}.tube:after{content:"PROPOLIS";position:absolute;bottom:55px;left:0;right:0;text-align:center;color:#6f7b41;font-weight:900;font-size:.75rem}.benefits{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0;list-style:none}.benefits li{padding:12px 15px;border-radius:14px;background:#f2fbfe;font-weight:700}.benefits li:before{content:"✓ ";color:var(--blue)}
+    .price-card{position:relative}.price-card.recommend{border:2px solid var(--pink)}.badge{position:absolute;right:18px;top:-13px;background:#de6481;color:#fff;border-radius:999px;padding:4px 12px;font-size:.74rem;font-weight:800}.per{display:block;color:#dc5877;font-size:1.65rem;font-weight:900}.set{font-size:.9rem}.caution{margin-top:26px;background:#fff1c9;border-radius:20px;padding:18px 22px;font-weight:700}
+    .voice{background:linear-gradient(150deg,#f6b6c5,#fbe0e7);text-align:center}.quote{max-width:740px;margin:28px auto;background:rgba(255,255,255,.9);padding:32px;border-radius:26px;box-shadow:var(--shadow);font-size:1.12rem}.cta{text-align:center;background:linear-gradient(150deg,#2ab8e7,#0798cf);color:#fff}.cta .button{background:#fff;color:#158eb8}.cta p{max-width:650px;margin:0 auto 26px}.footer{padding:30px 0;text-align:center;font-size:.75rem;color:#697784;background:#fff}
+    @media(max-width:760px){.hero{min-height:auto}.hero-grid{grid-template-columns:1fr;padding:56px 0 30px}.hero-copy{text-align:center}.chips{justify-content:center}.stage{height:300px}.p1{height:245px;width:150px;right:30px}.p2{width:165px}.brush{height:235px;left:100px}.brush.pink{right:75px}.brush:before{height:50px;width:39px}.problem-grid,.feature-grid,.price-grid{grid-template-columns:1fr}.section{padding:58px 0}.paste-box{grid-template-columns:1fr}.bottles{height:290px}.tube{height:220px}.tube.small{height:160px}.benefits{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">ATOMY ORAL CARE</div>
+        <h1>毎日の歯みがきを、<span>家族みんなの心地よい習慣に。</span></h1>
+        <p class="lead">歯間の汚れをしっかり磨きたい。でも、消耗品だから価格も大切。そんなご家庭に、細やかな磨き心地と続けやすさを両立した組み合わせです。</p>
+        <div class="chips"><span class="chip">8本セット</span><span class="chip">極細毛</span><span class="chip">プロポリス配合歯みがき</span></div>
+        <a class="button" href="#choose">自分に合うタイプを見る</a>
+      </div>
+      <div class="stage" aria-label="ピンク色のステージに並ぶ歯ブラシのイメージ">
+        <div class="plinth p1"></div><div class="plinth p2"></div><div class="brush"></div><div class="brush pink"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section problems">
+      <div class="wrap">
+        <div class="eyebrow">DO YOU FEEL THIS?</div><h2 class="title">こんなお悩み、ありませんか？</h2>
+        <div class="problem-grid">
+          <article class="card problem"><div class="icon">🦷</div><h3>歯間まで磨けているか不安</h3><p>毎日磨いても、細かなすき間や歯周ポケット付近の汚れが気になる。</p></article>
+          <article class="card problem"><div class="icon">🌿</div><h3>刺激が強い歯みがきは苦手</h3><p>強すぎる清涼感ではなく、毎日無理なく使える味を選びたい。</p></article>
+          <article class="card problem"><div class="icon">👨‍👩‍👧‍👦</div><h3>家族分のコストを抑えたい</h3><p>毎日使い、定期的に交換するものだから、品質と価格の両方を大切にしたい。</p></article>
+        </div>
+        <div class="answer">そのお悩みに、アトミ歯ブラシ × アトミ歯ミガキという選択。</div>
+      </div>
+    </section>
+
+    <section class="section toothbrush" id="choose">
+      <div class="wrap">
+        <div class="eyebrow">01 / TOOTHBRUSH</div><h2 class="title">細かなところまで磨きやすい、スーパースリム毛</h2>
+        <div class="feature-grid">
+          <article class="card feature"><div class="icon">✨</div><b>毛先0.03mm以下</b><p>0.18mmの毛を先端0.03mm以下に加工。歯間や細かな部分に届きやすい設計です。</p></article>
+          <article class="card feature"><div class="icon">🤲</div><b>握りやすいハンドル</b><p>毎日のブラッシングで扱いやすい、手になじむサイズ感です。</p></article>
+          <article class="card feature"><div class="icon">🏅</div><b>金粉を添加</b><p>純度99.9％の金粉を毛に添加。外部機関による認証・検査を受けた商品です。</p></article>
+        </div>
+        <p class="note">※毛先寸法・金粉純度等はご提供情報に基づく表記です。最新の商品表示・公式情報をご確認ください。</p>
+        <div class="prices">
+          <table class="price-table" aria-label="歯ブラシ3タイプの価格比較">
+            <thead><tr><th>タイプ（各8本入）</th><th>こんな方に</th><th>価格</th><th>PV</th></tr></thead>
+            <tbody>
+              <tr><td>一般タイプ</td><td>標準的なサイズが好み</td><td class="price">¥895</td><td>3,990 PV</td></tr>
+              <tr><td>コンパクト</td><td>奥歯や細部を磨きたい</td><td class="price">¥882</td><td>3,300 PV</td></tr>
+              <tr><td>キッス</td><td>小さめのヘッドを選びたい</td><td class="price">¥990</td><td>4,000 PV</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section paste">
+      <div class="wrap paste-box">
+        <div class="bottles" aria-label="プロポリス配合歯みがきのイメージ"><div class="tube small"></div><div class="tube"></div></div>
+        <div>
+          <div class="eyebrow">02 / TOOTHPASTE</div><h2 class="title">すっきりケアを、強すぎない使用感で。</h2>
+          <p class="lead">プロポリスエキスと茶葉エキスを配合。毎日のブラッシングで、お口を清潔に保ちたい方へ。</p>
+          <ul class="benefits"><li>歯垢を除去する</li><li>歯石の沈着を防ぐ</li><li>むし歯を防ぐ</li><li>口臭を防ぐ</li></ul>
+          <p class="note">※歯みがきを適切に行うことによる効果です。使用感には個人差があります。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section toothbrush">
+      <div class="wrap">
+        <div class="eyebrow">SIZE & PRICE</div><h2 class="title">使い方に合わせて選べる2サイズ</h2>
+        <div class="price-grid">
+          <article class="card price-card recommend"><span class="badge">家族使いに</span><h3>200g × 5本</h3><span class="per">合計 ¥1,830</span><span class="set">1本あたり約366円</span><p>家族みんなで使う方や、まとめて用意しておきたい方に。</p></article>
+          <article class="card price-card"><h3>50g × 4本</h3><span class="per">合計 ¥527</span><span class="set">1本あたり約132円</span><p>初めて試す方、持ち運びや旅行用にも選びやすいサイズ。</p></article>
+          <article class="card price-card"><h3>歯ブラシと一緒に</h3><span class="per">毎日のセット習慣</span><p>磨きやすい歯ブラシと歯みがきを組み合わせて、毎日の口腔ケアを気持ちよく。</p></article>
+        </div>
+        <div class="caution">⚠️ ご注文前に容量をご確認ください。200gタイプは大容量5本、歯ブラシは各タイプ8本セットで届きます。</div>
+      </div>
+    </section>
+
+    <section class="section voice">
+      <div class="wrap"><div class="eyebrow">USER'S VOICE</div><h2 class="title">私がセットで使い続ける理由</h2><div class="quote">「歯ブラシとプロポリス配合の歯みがきを一緒に使っています。強すぎない使用感で続けやすく、毎日のケアが楽しみになりました。」<p class="note">※個人の感想であり、使用感には個人差があります。</p></div></div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap"><h2 class="title">家族の歯ブラシ、そろそろ見直しませんか？</h2><p>どのタイプが合うか迷ったら、使う方の年齢や普段のお悩みを教えてください。選び方をご案内します。</p><a class="button" href="#">購入・タイプについて相談する</a><p class="note">※ボタンのリンク先は、公開時にLINE・購入ページ等へ設定してください。</p></div>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap">価格・PV・商品仕様は変更される場合があります。購入前に必ず公式の商品ページをご確認ください。<br>本ページは歯ブラシ・歯みがき剤を本来の用途で使用するための紹介ページです。</div></footer>
+</body>
+</html>
